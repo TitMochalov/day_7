@@ -1,0 +1,48 @@
+.wrapper {
+  position: relative;
+  background-color: rgb(241, 194, 238);
+  height: 100%;
+  width: 100%;
+}
+
+.conteiner {
+  position: absolute;
+  top: 50%;
+  right:50%;
+}
+
+.title__wrapper{
+  position: relative;
+}
+
+.title {
+display: inline-block;
+height: 100px;
+width: 100px;
+background-color: rgb(10, 9, 9);
+border-radius: 10%;
+}
+
+.title__wrapper::before {
+  content: "";
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background-color: blue;
+  border-radius: 30%;
+  position: absolute;
+  top: 49%;
+  right:100px;
+}
+
+.title__wrapper::after {
+  content: "";
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background-color: red;
+  border-radius: 30%;
+  position: absolute;
+  top: 49%;
+  left: 100px;
+}
